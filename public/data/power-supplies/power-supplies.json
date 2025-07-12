@@ -1,0 +1,338 @@
+[
+  {
+    "model_name": "Corsair SF450",
+    "model_name_i18n": "corsair_sf450_model",
+    "notes_i18n": "corsair_sf450_notes",
+    "oem_i18n": "oem_great_wall",
+    "wattage": 450,
+    "form_factor": "SFX",
+    "modularity": "Full",
+    "acquisition_status": "Used",
+    "acquisition_price_rmb": "400",
+    "warranty_years": 7,
+    "oem": "Great Wall",
+    "topology": "LLC + DC-DC",
+    "eighty_plus_certification": "Platinum",
+    "fan_size_mm": 92,
+    "fan_bearing_type": "Fluid Dynamic Bearing",
+    "fan_control_strategy": "Pure Temperature Control (Fan Stop)",
+    "packaging_quality": "None (used)",
+    "nameplate_data": {
+      "12v_current_a": 37.5,
+      "3_3v_5v_combined_power_w": 100
+    },
+    "peak_efficiency": {
+      "peak_efficiency_percent": 92.5
+    },
+    "voltage_regulation_ranking": 1,
+    "ripple_ranking": 1,
+    "cross_load_pass": true,
+    "emi_filter_y_caps_pairs": 2,
+    "rectifier_bridge_spec": "Normal",
+    "fan_wire_attachment": "Soldered (to external casing)",
+    "main_capacitor_spec": "Rubycon 390uF/420V/105°C",
+    "other_components_quality": "Full Japanese capacitors, full Infineon MOSFETs. Larger thermal pad for synchronous rectification. External casing design has unique ground wire connection.",
+    "input_voltage_range": "100-240V",
+    "hold_up_time_ms": {
+      "pg_signal_ms": 22.9,
+      "12v_ms": 18.8,
+      "5v_ms": 19.2,
+      "3_3v_ms": 14.1,
+      "intel_atx_compliant": false
+    },
+    "protection_features": {
+      "opp_trigger_w": 610,
+      "ocp_status": "Normal",
+      "inrush_protection_components": "MOV+Fuse+NTC+Relay"
+    },
+    "notes": "Reviewer's acquisition price was lower than typical used market."
+  },
+  {
+    "model_name": "EVGA SuperNOVA 450 GM",
+    "model_name_i18n": "evga_supernova_450_gm_model",
+    "notes_i18n": "evga_supernova_450_gm_notes",
+    "oem_i18n": "oem_huili_electronics",
+    "wattage": 450,
+    "form_factor": "SFX",
+    "modularity": "Full",
+    "acquisition_status": "Used",
+    "acquisition_price_rmb": "300",
+    "warranty_years": 7,
+    "oem": "HuiLi Electronics",
+    "topology": "LLC + DC-DC",
+    "eighty_plus_certification": "Gold",
+    "fan_size_mm": 92,
+    "fan_bearing_type": "Dual Ball Bearing",
+    "fan_control_strategy": "Pure Temperature Control (Fan Stop)",
+    "packaging_quality": "None (used)",
+    "nameplate_data": {
+      "12v_current_a": 37.5,
+      "3_3v_5v_combined_power_w": 100
+    },
+    "peak_efficiency": {
+      "peak_efficiency_percent": 91.8
+    },
+    "voltage_regulation_ranking": 5,
+    "ripple_ranking": 3,
+    "cross_load_pass": true,
+    "emi_filter_y_caps_pairs": 2,
+    "rectifier_bridge_spec": "Normal",
+    "fan_wire_attachment": "Connector",
+    "main_capacitor_spec": "Rubycon 270uF/450V/105°C",
+    "other_components_quality": "All Japanese capacitors, all Infineon MOSFETs. X-caps, inductors, transformers shielded with tape. DC-DC isolated.",
+    "input_voltage_range": "100-240V",
+    "hold_up_time_ms": {
+      "pg_signal_ms": 22.9,
+      "12v_ms": 17.9,
+      "5v_ms": 18.8,
+      "3_3v_ms": 13.8,
+      "intel_atx_compliant": false
+    },
+    "protection_features": {
+      "opp_trigger_w": 640,
+      "ocp_status": "Normal",
+      "inrush_protection_components": "MOV+Fuse+NTC+Relay"
+    },
+    "notes": "Voltage drops significantly above rated load (450W). Reviewer's acquisition price was lower than typical used market."
+  },
+  {
+    "model_name": "Tt Smart BM2 450W",
+    "model_name_i18n": "tt_smart_bm2_450w_model",
+    "notes_i18n": "tt_smart_bm2_450w_notes",
+    "oem_i18n": "oem_jiuzhou_yangguang_hkc",
+    "wattage": 450,
+    "form_factor": "SFX",
+    "modularity": "Full",
+    "acquisition_status": "New",
+    "acquisition_price_rmb": "499",
+    "warranty_years": 7,
+    "oem": "Jiuzhou Yangguang (HKC)",
+    "topology": "LLC + DC-DC",
+    "eighty_plus_certification": "Gold",
+    "fan_size_mm": 92,
+    "fan_bearing_type": "Unknown",
+    "fan_control_strategy": "Load-based (Fan Stop), silent-oriented",
+    "packaging_quality": "Good",
+    "nameplate_data": {
+      "12v_current_a": 37.5,
+      "3_3v_5v_combined_power_w": 100
+    },
+    "peak_efficiency": {
+      "peak_efficiency_percent": 92.5
+    },
+    "voltage_regulation_ranking": 2,
+    "ripple_ranking": 2,
+    "cross_load_pass": true,
+    "emi_filter_y_caps_pairs": 4,
+    "rectifier_bridge_spec": "Normal",
+    "fan_wire_attachment": "Connector (4-pin)",
+    "main_capacitor_spec": "Rubycon 270uF/450V/105°C",
+    "other_components_quality": "More 12V synchronous rectification MOSFETs than SF450. Full-sealed inductors. Larger heatsink. Input AC wires soldered directly to PCB. Fixed module screws covered by sticker.",
+    "input_voltage_range": "100-240V",
+    "hold_up_time_ms": {
+      "pg_signal_ms": 19.3,
+      "12v_ms": 21.9,
+      "5v_ms": 23.7,
+      "3_3v_ms": 19.0,
+      "intel_atx_compliant": true
+    },
+    "protection_features": {
+      "opp_trigger_w": 600,
+      "ocp_status": "Normal",
+      "inrush_protection_components": "MOV+Fuse+NTC+Relay"
+    },
+    "notes": "Very similar design to Corsair SF450, likely studied it."
+  },
+  {
+    "model_name": "YINGXING 450W Non-Modular",
+    "model_name_i18n": "yinxin_450w_non_modular_model",
+    "notes_i18n": "yinxin_450w_non_modular_notes",
+    "oem_i18n": "oem_xiefa",
+    "wattage": 450,
+    "form_factor": "SFX",
+    "modularity": "Non-Modular",
+    "acquisition_status": "New",
+    "acquisition_price_rmb": "469",
+    "warranty_years": 5,
+    "oem": "XieFa",
+    "topology": "LLC + DC-DC",
+    "eighty_plus_certification": "Gold",
+    "fan_size_mm": 90,
+    "fan_bearing_type": "DURO Bearing",
+    "fan_control_strategy": "Hybrid (RPM increases with load)",
+    "packaging_quality": "Good",
+    "nameplate_data": {
+      "12v_current_a": 37.5,
+      "3_3v_5v_combined_power_w": 110
+    },
+    "peak_efficiency": {
+      "peak_efficiency_percent": 90.5
+    },
+    "voltage_regulation_ranking": 3,
+    "ripple_ranking": 4,
+    "cross_load_pass": true,
+    "emi_filter_y_caps_pairs": 4,
+    "rectifier_bridge_spec": "Normal",
+    "fan_wire_attachment": "Connector",
+    "main_capacitor_spec": "Rubycon 330uF/450V/105°C",
+    "other_components_quality": "Components mostly from big brands. Ferrite bead on 5VSB.",
+    "input_voltage_range": "100-240V",
+    "hold_up_time_ms": {
+      "pg_signal_ms": 35.9,
+      "12v_ms": 17.5,
+      "5v_ms": 16.9,
+      "3_3v_ms": 12.9,
+      "intel_atx_compliant": false
+    },
+    "protection_features": {
+      "opp_trigger_w": 570,
+      "ocp_status": "Normal",
+      "inrush_protection_components": "MOV+Fuse+NTC"
+    },
+    "notes": "Tested version is V3.0. Good value for money. High fan RPM at full load compared to others."
+  },
+  {
+    "model_name": "YINGXING 450W Full Modular",
+    "model_name_i18n": "yinxin_450w_full_modular_model",
+    "notes_i18n": "yinxin_450w_full_modular_notes",
+    "oem_i18n": "oem_yiheng",
+    "wattage": 450,
+    "form_factor": "SFX",
+    "modularity": "Full",
+    "acquisition_status": "Used",
+    "acquisition_price_rmb": "240",
+    "warranty_years": 3,
+    "oem": "YiHeng",
+    "topology": "LLC + DC-DC",
+    "eighty_plus_certification": "Gold",
+    "fan_size_mm": 80,
+    "fan_bearing_type": "Dual Ball Bearing",
+    "fan_control_strategy": "Hybrid (RPM increases with load), high start-up RPM (~1200 RPM)",
+    "packaging_quality": "None (used)",
+    "nameplate_data": {
+      "12v_current_a": 37.5,
+      "3_3v_5v_combined_power_w": 90
+    },
+    "peak_efficiency": {
+      "peak_efficiency_percent": 88.5
+    },
+    "voltage_regulation_ranking": 6,
+    "ripple_ranking": "Failed",
+    "cross_load_pass": true,
+    "emi_filter_y_caps_pairs": 4,
+    "rectifier_bridge_spec": "Normal",
+    "fan_wire_attachment": "Connector",
+    "main_capacitor_spec": "Rubycon 330uF/450V/105°C",
+    "other_components_quality": "All Japanese capacitors, all Infineon MOSFETs. Based on 7145B solution. Tight internal layout, restricted airflow. Input AC wires are long and messy. 12V output looks like dual rail but is single. Thin wire on back of PCB.",
+    "input_voltage_range": "200-240V",
+    "hold_up_time_ms": {
+      "pg_signal_ms": 19.2,
+      "12v_ms": 18.0,
+      "5v_ms": 18.8,
+      "3_3v_ms": 17.9,
+      "intel_atx_compliant": false
+    },
+    "protection_features": {
+      "opp_trigger_w": 670,
+      "ocp_status": "Normal",
+      "inrush_protection_components": "MOV+Fuse+NTC"
+    },
+    "notes": "Fan bearing wear issue common. Reviewer's acquisition price was lower than typical used market."
+  },
+  {
+    "model_name": "Tt Smart BX1 450W",
+    "model_name_i18n": "tt_smart_bx1_450w_model",
+    "notes_i18n": "tt_smart_bx1_450w_notes",
+    "oem_i18n": "oem_jiuzhou_yangguang_hkc",
+    "wattage": 450,
+    "form_factor": "SFX",
+    "modularity": "Non-Modular",
+    "acquisition_status": "New",
+    "acquisition_price_rmb": "259",
+    "warranty_years": 3,
+    "oem": "Jiuzhou Yangguang (HKC)",
+    "topology": "Single Magnetic Amplification",
+    "eighty_plus_certification": "Bronze",
+    "fan_size_mm": 80,
+    "fan_bearing_type": "Unknown",
+    "fan_control_strategy": "Two-stage (low load one RPM, high load another)",
+    "packaging_quality": "Good",
+    "nameplate_data": {
+      "12v_current_a": 37.0,
+      "3_3v_5v_combined_power_w": 100
+    },
+    "peak_efficiency": {
+      "peak_efficiency_percent": 87.46
+    },
+    "voltage_regulation_ranking": null,
+    "ripple_ranking": "Failed",
+    "cross_load_pass": true,
+    "emi_filter_y_caps_pairs": 4,
+    "rectifier_bridge_spec": "Normal",
+    "fan_wire_attachment": "Connector",
+    "main_capacitor_spec": "Rubycon 120uF/420V/105°C",
+    "other_components_quality": "Lowest overall component spec.",
+    "input_voltage_range": "200-240V",
+    "hold_up_time_ms": {
+      "pg_signal_ms": 13.3,
+      "12v_ms": 13.3,
+      "5v_ms": 11.9,
+      "3_3v_ms": 11.8,
+      "intel_atx_compliant": false
+    },
+    "protection_features": {
+      "opp_trigger_w": 630,
+      "ocp_status": "Not tested (due to UVP)",
+      "inrush_protection_components": "MOV+Fuse+NTC"
+    },
+    "notes": "Still uses single magnetic amplification. Small 8cm fan, max 2500 RPM. High temperature at full load. Not directly comparable in voltage regulation/ripple rankings due to topology."
+  },
+  {
+    "model_name": "FSP MS450",
+    "model_name_i18n": "fsp_ms450_model",
+    "notes_i18n": "fsp_ms450_notes",
+    "oem_i18n": "oem_fsp_wuxi_zhonghan",
+    "wattage": 450,
+    "form_factor": "SFX",
+    "modularity": "Non-Modular",
+    "acquisition_status": "New",
+    "acquisition_price_rmb": "409",
+    "warranty_years": 5,
+    "oem": "FSP (Wuxi Zhonghan)",
+    "topology": "LLC + DC-DC",
+    "eighty_plus_certification": "Bronze",
+    "fan_size_mm": 80,
+    "fan_bearing_type": "Fluid Dynamic Bearing",
+    "fan_control_strategy": "Fan Stop (no self-check spin on startup)",
+    "packaging_quality": "Excellent",
+    "nameplate_data": {
+      "12v_current_a": 38.0,
+      "3_3v_5v_combined_power_w": 80
+    },
+    "peak_efficiency": {
+      "peak_efficiency_percent": 88.51
+    },
+    "voltage_regulation_ranking": 7,
+    "ripple_ranking": "Failed",
+    "cross_load_pass": true,
+    "emi_filter_y_caps_pairs": 1,
+    "rectifier_bridge_spec": "Lowest spec",
+    "fan_wire_attachment": "Soldered",
+    "main_capacitor_spec": "Rubycon 120uF/400V/105°C",
+    "other_components_quality": "Fixed screws covered by stickers.",
+    "input_voltage_range": "200-240V",
+    "hold_up_time_ms": {
+      "pg_signal_ms": 14.2,
+      "12v_ms": 22.3,
+      "5v_ms": 14.2,
+      "3_3v_ms": 11.8,
+      "intel_atx_compliant": false
+    },
+    "protection_features": {
+      "opp_trigger_w": 560,
+      "ocp_status": "Questionable (3.3V smoke, 5V damage)",
+      "inrush_protection_components": "MOV+Fuse+NTC"
+    },
+    "notes": "Highest exhaust temperature (87.3°C). Tested version is 2.0."
+  }
+]

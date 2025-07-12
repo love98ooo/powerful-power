@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" width="500" height="200">
+  <!-- 原favicon部分 -->
+  <g transform="translate(20, 0)">
+    <line x1="50" y1="100" x2="100" y2="50" stroke="white" stroke-width="4"/>
+    <line x1="100" y1="50" x2="150" y2="100" stroke="white" stroke-width="4"/>
+    <line x1="150" y1="100" x2="100" y2="150" stroke="white" stroke-width="4"/>
+    <line x1="100" y1="150" x2="50" y2="100" stroke="white" stroke-width="4"/>
+    <line x1="70" y1="50" x2="100" y2="50" stroke="white" stroke-width="4"/>
+    <line x1="70" y1="150" x2="100" y2="150" stroke="white" stroke-width="4"/>
+    <line x1="150" y1="70" x2="150" y2="100" stroke="white" stroke-width="4"/>
+    <line x1="50" y1="70" x2="50" y2="100" stroke="white" stroke-width="4"/>
+    <circle cx="50" cy="100" r="5" fill="white"/>
+    <circle cx="100" cy="50" r="5" fill="white"/>
+    <circle cx="150" cy="100" r="5" fill="white"/>
+    <circle cx="100" cy="150" r="5" fill="white"/>
+    <polygon points="60,70 80,70 80,90" fill="white"/>
+    <polygon points="120,70 140,70 120,90" fill="white"/>
+    <polygon points="120,110 140,130 120,130" fill="white"/>
+    <polygon points="60,130 80,130 80,110" fill="white"/>
+  </g>
+  <!-- 文字部分 -->
+  <g transform="translate(200, 0)">
+    <!-- Powerful -->
+    <text x="0" y="90" font-family="Arial, sans-serif" font-weight="bold" font-size="36" fill="white">POWERFUL</text>
+    <!-- Power -->
+    <text x="0" y="150" font-family="Arial, sans-serif" font-weight="bold" font-size="55" fill="white">POWER</text>
+    <!-- 装饰线 -->
+    <line x1="-10" y1="100" x2="220" y2="100" stroke="white" stroke-width="4"/>
+    <line x1="-10" y1="50" x2="220" y2="50" stroke="white" stroke-width="4"/>
+  </g>
+</svg>
