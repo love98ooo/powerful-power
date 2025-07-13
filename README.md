@@ -14,7 +14,6 @@
 - **UI组件**: shadcn 组件库
 - **样式**: Tailwind CSS
 - **图表**: ECharts 用于能效曲线展示
-- **国际化**: next-intl 支持多语言
 - **数据管理**: JSON 文件存储数据
 - **包管理**: pnpm
 
@@ -23,16 +22,14 @@
 ```
 powerful-power/
 ├── app/                      # Next.js App Router
-│   ├── [locale]/             # 国际化路由
-│   │   ├── layout.tsx        # 布局组件
-│   │   ├── page.tsx          # 主页
-│   │   ├── power-supplies/   # 电源列表页
-│   │   │   ├── page.tsx      # 电源列表页面
-│   │   │   ├── [id]/         # 电源详情页
-│   │   │   │   └── page.tsx  # 电源详情页面
-│   │   ├── compare/          # 电源比较页
-│   │   └── about/            # 关于页面
-│   └── i18n/                 # 国际化配置
+│   ├── layout.tsx            # 布局组件
+│   ├── page.tsx              # 主页
+│   ├── power-supplies/       # 电源列表页
+│   │   ├── page.tsx          # 电源列表页面
+│   │   ├── [id]/             # 电源详情页
+│   │   │   └── page.tsx      # 电源详情页面
+│   ├── compare/              # 电源比较页
+│   └── about/                # 关于页面
 ├── components/               # 组件
 │   ├── ui/                   # shadcn/ui组件
 │   ├── power-supply/         # 电源相关组件
@@ -42,14 +39,11 @@ powerful-power/
 │   └── layout/               # 布局组件
 ├── lib/                      # 工具函数
 │   └── utils.ts
-├── public/                  # 静态资源
-│   ├── data/                    # 数据文件
-│   │   ├── power-supplies/      # 电源数据(JSON)
-│   │   └── manufacturers/       # 制造商数据(JSON)
-│   └── locales/             # 翻译文件
-│       ├── en/              # 英文翻译
-│       └── zh/              # 中文翻译
-└── types/                   # TypeScript类型定义
+├── public/                   # 静态资源
+│   ├── data/                 # 数据文件
+│   │   ├── power-supplies/   # 电源数据(JSON)
+│   │   └── manufacturers/    # 制造商数据(JSON)
+└── types/                    # TypeScript类型定义
 ```
 
 ## 功能特点
@@ -57,7 +51,6 @@ powerful-power/
 - 电源数据展示与搜索
 - 电源详细参数查看
 - 电源能效曲线图表展示
-- 多语言支持 (中文、英文)
 - 电源对比功能
 - 响应式设计，支持移动端和桌面端
 

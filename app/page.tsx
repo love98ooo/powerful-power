@@ -2,27 +2,20 @@
 
 import { useState, useEffect } from "react";
 import React from 'react';
-import { Navbar } from "@/components/layout/navbar";
 import { SearchBar } from "@/components/layout/search-bar";
-import { Sidebar } from "@/components/layout/sidebar";
 import { PowerGrid } from "@/components/power-supply/power-grid";
-import { useI18n } from "./i18n/i18n-context";
-import { debounce } from "@/lib/utils";
-import { useTheme } from '@/components/theme/theme-provider';
+import { debounce, generatePowerSupplyId } from "@/lib/utils";
 
 interface PowerSupply {
   id: string;
   model_name: string;
-  model_name_i18n: string;
   oem: string;
-  oem_i18n: string;
   notes: string;
-  notes_i18n: string;
   manufacturer: string;
   wattage: number;
   efficiency_rating?: string;
   image_url?: string;
-  eighty_plus_certification?: string; // Renamed from conversion_efficiency
+  eighty_plus_certification?: string;
   voltage_regulation_ranking?: number;
   acquisition_price_rmb?: number;
   fan_control_strategy?: string;
@@ -35,9 +28,7 @@ export default function Home() {
   const [powerSupplies, setPowerSupplies] = useState<PowerSupply[]>([]);
   const [filteredSupplies, setFilteredSupplies] = useState<PowerSupply[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const { theme, setTheme } = useTheme();
   const [searchTerm, setSearchTerm] = useState<string>('');
-  const { t } = useI18n();
 
   // 获取电源数据
   useEffect(() => {
@@ -48,7 +39,7 @@ export default function Home() {
         // Add an id field to each power supply
         const dataWithIds = data.map((item: PowerSupply) => ({
           ...item,
-          id: item.id || `${item.model_name.replace(/\s+/g, '-').toLowerCase()}`
+          id: item.id || generatePowerSupplyId(item.model_name)
         }));
         setPowerSupplies(dataWithIds);
         setFilteredSupplies(dataWithIds);
@@ -71,16 +62,12 @@ export default function Home() {
 
     const lowerQuery = query.toLowerCase();
     const filtered = powerSupplies.filter(ps => {
-      const modelNameTranslated = t(ps.model_name_i18n ?? '', 'power').toLowerCase();
-      const manufacturerTranslated = t(ps.oem_i18n ?? '', 'power').toLowerCase();
-
       return (ps.model_name ?? '').toLowerCase().includes(lowerQuery) ||
-        modelNameTranslated.includes(lowerQuery) ||
         (ps.manufacturer ?? '').toLowerCase().includes(lowerQuery) ||
-        manufacturerTranslated.includes(lowerQuery);
+        (ps.oem ?? '').toLowerCase().includes(lowerQuery);
     });
     setFilteredSupplies(filtered);
-  }, [powerSupplies, t]);
+  }, [powerSupplies]);
 
   const debouncedSearch = React.useMemo(() => debounce(handleSearch, 500), [handleSearch]);
 
@@ -90,21 +77,19 @@ export default function Home() {
   }, [searchTerm, debouncedSearch]);
 
   if (isLoading) {
-    return <div className="flex items-center justify-center h-screen">{t('site.loading')}</div>;
+    return <div className="flex items-center justify-center h-screen">加载中...</div>;
   }
 
   return (
     <>
-      <Navbar currentTheme={theme} />
-
       <main className="container mx-auto px-4 py-8">
         <SearchBar onInputChange={setSearchTerm} value={searchTerm} />
 
         <div className="mt-8">
           <PowerGrid powerSupplies={filteredSupplies.map(ps => ({
             id: ps.id,
-            modelName: t(ps.model_name_i18n, 'power') || ps.model_name,
-            oem: t(ps.oem_i18n, 'power') || ps.oem,
+            modelName: ps.model_name,
+            oem: ps.oem,
             wattage: ps.wattage,
             efficiencyRating: ps.efficiency_rating,
             eightyPlusCertification: ps.eighty_plus_certification,
@@ -118,13 +103,8 @@ export default function Home() {
         </div>
       </main>
 
-      <Sidebar
-        onThemeChange={setTheme}
-        currentTheme={theme}
-      />
-
       <footer className="border-t p-4 text-center text-sm text-muted-foreground mt-12">
-        &copy; {new Date().getFullYear()} {t('site.title')} | {t('site.footer')}
+        &copy; {new Date().getFullYear()} Powerful Power | 数据仅供参考
       </footer>
     </>
   );

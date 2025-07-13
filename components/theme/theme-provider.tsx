@@ -40,12 +40,6 @@ export function ThemeProvider({
     const root = window.document.documentElement
     root.classList.remove('light', 'dark')
     root.classList.add(theme)
-
-    const favicon = document.querySelector<HTMLLinkElement>('link[rel="icon"]')
-    if (favicon) {
-      favicon.href = theme === 'dark' ? '/favicon-dark.svg' : '/favicon-light.svg'
-    }
-
   }, [theme])
 
   const value = {
@@ -70,4 +64,4 @@ export const useTheme = () => {
     throw new Error('useTheme must be used within a ThemeProvider')
 
   return context
-} 
+}

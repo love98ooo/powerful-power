@@ -2,15 +2,12 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useI18n } from "@/app/i18n/i18n-context";
 
 interface NavbarProps {
   currentTheme: "light" | "dark";
 }
 
 export function Navbar({ currentTheme }: NavbarProps) {
-  const { t } = useI18n();
-
   const logoSrc = currentTheme === "dark" ? "/logo-dark.svg" : "/logo-light.svg";
 
   return (
@@ -26,16 +23,16 @@ export function Navbar({ currentTheme }: NavbarProps) {
         {/* 导航菜单 */}
         <nav className="flex items-center gap-4 sm:gap-6">
           <Link href="/database" className="text-sm font-medium transition-colors hover:text-primary">
-            {t('nav.power-supplies')}
+            电源列表
           </Link>
           <Link href="/ranking" className="text-sm font-medium transition-colors hover:text-primary">
-            {t('nav.ranking')}
+            排行榜
           </Link>
           <Link href="/compare" className="text-sm font-medium transition-colors hover:text-primary">
-            {t('nav.compare')}
+            电源对比
           </Link>
           <Link href="/about" className="text-sm font-medium transition-colors hover:text-primary">
-            {t('nav.about')}
+            关于
           </Link>
         </nav>
       </div>

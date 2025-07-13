@@ -1,37 +1,35 @@
 [
   {
-    "model_name": "Corsair SF450",
-    "model_name_i18n": "corsair_sf450_model",
-    "notes_i18n": "corsair_sf450_notes",
-    "oem_i18n": "oem_great_wall",
+    "model_name": "海盗船 SF450",
     "wattage": 450,
     "form_factor": "SFX",
-    "modularity": "Full",
+    "modularity": "全模组",
     "acquisition_status": "Used",
     "acquisition_price_rmb": "400",
     "warranty_years": 7,
-    "oem": "Great Wall",
+    "warranty_policy": "盟创代理, 需要原始订单和发票; 闲鱼有代保业务, 电源150一次",
+    "oem": "长城",
     "topology": "LLC + DC-DC",
     "eighty_plus_certification": "Platinum",
     "fan_size_mm": 92,
-    "fan_bearing_type": "Fluid Dynamic Bearing",
-    "fan_control_strategy": "Pure Temperature Control (Fan Stop)",
-    "packaging_quality": "None (used)",
+    "fan_bearing_type": "流体动力轴承",
+    "fan_control_strategy": "纯温度控制（风扇停止）",
+    "packaging_quality": "无（使用）",
     "nameplate_data": {
       "12v_current_a": 37.5,
-      "3_3v_5v_combined_power_w": 100
+      "5v_current_a": 20,
+      "3_3v_current_a": 15,
+      "side_power_w": 100
     },
     "peak_efficiency": {
       "peak_efficiency_percent": 92.5
     },
-    "voltage_regulation_ranking": 1,
-    "ripple_ranking": 1,
     "cross_load_pass": true,
     "emi_filter_y_caps_pairs": 2,
-    "rectifier_bridge_spec": "Normal",
-    "fan_wire_attachment": "Soldered (to external casing)",
-    "main_capacitor_spec": "Rubycon 390uF/420V/105°C",
-    "other_components_quality": "Full Japanese capacitors, full Infineon MOSFETs. Larger thermal pad for synchronous rectification. External casing design has unique ground wire connection.",
+    "rectifier_bridge_spec": "正常",
+    "fan_wire_attachment": "焊接（到外部外壳）",
+    "main_capacitor_spec": "红宝石 390uF/420V/105°C",
+    "other_components_quality": "全日本电容器，全英飞凌MOSFET。同步整流器更大的热垫。外部外壳设计具有独特的接地线连接。",
     "input_voltage_range": "100-240V",
     "hold_up_time_ms": {
       "pg_signal_ms": 22.9,
@@ -42,44 +40,61 @@
     },
     "protection_features": {
       "opp_trigger_w": 610,
-      "ocp_status": "Normal",
+      "ocp_status": "正常",
       "inrush_protection_components": "MOV+Fuse+NTC+Relay"
     },
-    "notes": "Reviewer's acquisition price was lower than typical used market."
+    "efficiency_points": [
+      {"load_percentage": 6.7, "efficiency_percentage": 79.0},
+      {"load_percentage": 11.1, "efficiency_percentage": 87.0},
+      {"load_percentage": 16.7, "efficiency_percentage": 90.5},
+      {"load_percentage": 22.2, "efficiency_percentage": 92.0},
+      {"load_percentage": 33.3, "efficiency_percentage": 93.0},
+      {"load_percentage": 44.4, "efficiency_percentage": 92.5},
+      {"load_percentage": 55.6, "efficiency_percentage": 92.0},
+      {"load_percentage": 66.7, "efficiency_percentage": 91.0},
+      {"load_percentage": 77.8, "efficiency_percentage": 90.0},
+      {"load_percentage": 88.9, "efficiency_percentage": 89.0},
+      {"load_percentage": 100.0, "efficiency_percentage": 88.0},
+      {"load_percentage": 111.1, "efficiency_percentage": 87.0},
+      {"load_percentage": 122.2, "efficiency_percentage": 86.0}
+    ],
+    "source": {
+      "name": "玩笑笑笑笑笑",
+      "url": "https://www.bilibili.com/video/BV1T34y1v7JH"
+    },
+    "notes": "评测者购买价格低于典型使用市场。"
   },
   {
-    "model_name": "EVGA SuperNOVA 450 GM",
-    "model_name_i18n": "evga_supernova_450_gm_model",
-    "notes_i18n": "evga_supernova_450_gm_notes",
-    "oem_i18n": "oem_huili_electronics",
+    "model_name": "EVGA 450GM",
     "wattage": 450,
     "form_factor": "SFX",
-    "modularity": "Full",
+    "modularity": "全模组",
     "acquisition_status": "Used",
     "acquisition_price_rmb": "300",
     "warranty_years": 7,
-    "oem": "HuiLi Electronics",
+    "warranty_policy": "盟创代理, 需要原始订单和发票; 可以找台湾EVGA申请RMA, 淘宝转运比较便宜",
+    "oem": "辉力电子（全汉分公司）",
     "topology": "LLC + DC-DC",
     "eighty_plus_certification": "Gold",
     "fan_size_mm": 92,
-    "fan_bearing_type": "Dual Ball Bearing",
-    "fan_control_strategy": "Pure Temperature Control (Fan Stop)",
-    "packaging_quality": "None (used)",
+    "fan_bearing_type": "双球轴承",
+    "fan_control_strategy": "纯温度控制（风扇停止）",
+    "packaging_quality": "无（使用）",
     "nameplate_data": {
       "12v_current_a": 37.5,
-      "3_3v_5v_combined_power_w": 100
+      "5v_current_a": 20,
+      "3_3v_current_a": 20,
+      "side_power_w": 100
     },
     "peak_efficiency": {
       "peak_efficiency_percent": 91.8
     },
-    "voltage_regulation_ranking": 5,
-    "ripple_ranking": 3,
     "cross_load_pass": true,
     "emi_filter_y_caps_pairs": 2,
-    "rectifier_bridge_spec": "Normal",
-    "fan_wire_attachment": "Connector",
-    "main_capacitor_spec": "Rubycon 270uF/450V/105°C",
-    "other_components_quality": "All Japanese capacitors, all Infineon MOSFETs. X-caps, inductors, transformers shielded with tape. DC-DC isolated.",
+    "rectifier_bridge_spec": "正常",
+    "fan_wire_attachment": "连接器",
+    "main_capacitor_spec": "红宝石 270uF/450V/105°C",
+    "other_components_quality": "全日本电容器，全英飞凌MOSFET。X-caps，电感器，变压器用胶带屏蔽。DC-DC隔离。",
     "input_voltage_range": "100-240V",
     "hold_up_time_ms": {
       "pg_signal_ms": 22.9,
@@ -93,89 +108,123 @@
       "ocp_status": "Normal",
       "inrush_protection_components": "MOV+Fuse+NTC+Relay"
     },
-    "notes": "Voltage drops significantly above rated load (450W). Reviewer's acquisition price was lower than typical used market."
+    "efficiency_points": [
+      {"load_percentage": 6.7, "efficiency_percentage": 80.0},
+      {"load_percentage": 11.1, "efficiency_percentage": 88.0},
+      {"load_percentage": 16.7, "efficiency_percentage": 91.0},
+      {"load_percentage": 22.2, "efficiency_percentage": 92.0},
+      {"load_percentage": 33.3, "efficiency_percentage": 92.5},
+      {"load_percentage": 44.4, "efficiency_percentage": 92.0},
+      {"load_percentage": 55.6, "efficiency_percentage": 91.5},
+      {"load_percentage": 66.7, "efficiency_percentage": 91.0},
+      {"load_percentage": 77.8, "efficiency_percentage": 90.0},
+      {"load_percentage": 88.9, "efficiency_percentage": 89.5},
+      {"load_percentage": 100.0, "efficiency_percentage": 89.0},
+      {"load_percentage": 111.1, "efficiency_percentage": 88.0},
+      {"load_percentage": 122.2, "efficiency_percentage": 87.0}
+    ],
+    "source": {
+      "name": "玩笑笑笑笑笑",
+      "url": "https://www.bilibili.com/video/BV1T34y1v7JH"
+    },
+    "notes": "电压在额定负载（450W）以上显著下降。评测者购买价格低于典型使用市场。"
   },
   {
-    "model_name": "Tt Smart BM2 450W",
-    "model_name_i18n": "tt_smart_bm2_450w_model",
-    "notes_i18n": "tt_smart_bm2_450w_notes",
-    "oem_i18n": "oem_jiuzhou_yangguang_hkc",
+    "model_name": "TT 钢影 450W",
     "wattage": 450,
     "form_factor": "SFX",
-    "modularity": "Full",
+    "modularity": "全模组",
     "acquisition_status": "New",
     "acquisition_price_rmb": "499",
     "warranty_years": 7,
-    "oem": "Jiuzhou Yangguang (HKC)",
+    "warranty_policy": "不支援, 只能经销商送保",
+    "oem": "九洲阳光（HKC）",
     "topology": "LLC + DC-DC",
     "eighty_plus_certification": "Gold",
     "fan_size_mm": 92,
-    "fan_bearing_type": "Unknown",
-    "fan_control_strategy": "Load-based (Fan Stop), silent-oriented",
-    "packaging_quality": "Good",
+    "fan_bearing_type": "未知",
+    "fan_control_strategy": "负载（风扇停止），静音导向",
+    "packaging_quality": "良好",
     "nameplate_data": {
       "12v_current_a": 37.5,
-      "3_3v_5v_combined_power_w": 100
+      "5v_current_a": 20,
+      "3_3v_current_a": 20,
+      "side_power_w": 100
     },
     "peak_efficiency": {
       "peak_efficiency_percent": 92.5
     },
-    "voltage_regulation_ranking": 2,
-    "ripple_ranking": 2,
     "cross_load_pass": true,
     "emi_filter_y_caps_pairs": 4,
     "rectifier_bridge_spec": "Normal",
-    "fan_wire_attachment": "Connector (4-pin)",
-    "main_capacitor_spec": "Rubycon 270uF/450V/105°C",
-    "other_components_quality": "More 12V synchronous rectification MOSFETs than SF450. Full-sealed inductors. Larger heatsink. Input AC wires soldered directly to PCB. Fixed module screws covered by sticker.",
+    "fan_wire_attachment": "连接器（4针）",
+    "main_capacitor_spec": "红宝石 270uF/450V/105°C",
+    "other_components_quality": "比SF450更多的12V同步整流MOSFET。全密封电感器。更大的散热器。输入AC线直接焊接到PCB。固定模块螺丝被贴纸覆盖。",
     "input_voltage_range": "100-240V",
     "hold_up_time_ms": {
       "pg_signal_ms": 19.3,
       "12v_ms": 21.9,
       "5v_ms": 23.7,
-      "3_3v_ms": 19.0,
+      "3_3v_ms": 19,
       "intel_atx_compliant": true
     },
     "protection_features": {
       "opp_trigger_w": 600,
-      "ocp_status": "Normal",
+      "ocp_status": "正常",
       "inrush_protection_components": "MOV+Fuse+NTC+Relay"
     },
-    "notes": "Very similar design to Corsair SF450, likely studied it."
+    "efficiency_points": [
+      {"load_percentage": 6.7, "efficiency_percentage": 79.0},
+      {"load_percentage": 11.1, "efficiency_percentage": 87.0},
+      {"load_percentage": 16.7, "efficiency_percentage": 90.0},
+      {"load_percentage": 22.2, "efficiency_percentage": 91.5},
+      {"load_percentage": 33.3, "efficiency_percentage": 92.5},
+      {"load_percentage": 44.4, "efficiency_percentage": 92.5},
+      {"load_percentage": 55.6, "efficiency_percentage": 92.0},
+      {"load_percentage": 66.7, "efficiency_percentage": 91.0},
+      {"load_percentage": 77.8, "efficiency_percentage": 90.0},
+      {"load_percentage": 88.9, "efficiency_percentage": 89.0},
+      {"load_percentage": 100.0, "efficiency_percentage": 88.0},
+      {"load_percentage": 111.1, "efficiency_percentage": 87.0},
+      {"load_percentage": 122.2, "efficiency_percentage": 86.0}
+    ],
+    "source": {
+      "name": "玩笑笑笑笑笑",
+      "url": "https://www.bilibili.com/video/BV1T34y1v7JH"
+    },
+    "notes": "与海盗船SF450非常相似的设计"
   },
   {
-    "model_name": "YINGXING 450W Non-Modular",
-    "model_name_i18n": "yinxin_450w_non_modular_model",
-    "notes_i18n": "yinxin_450w_non_modular_notes",
-    "oem_i18n": "oem_xiefa",
+    "model_name": "银欣 ST45SF",
     "wattage": 450,
     "form_factor": "SFX",
-    "modularity": "Non-Modular",
+    "modularity": "非模组",
     "acquisition_status": "New",
     "acquisition_price_rmb": "469",
     "warranty_years": 5,
-    "oem": "XieFa",
+    "warranty_policy": "支援个人送保, 但是需要提供凭证, 且负担寄过去的邮费 (售后电话找不到)",
+    "oem": "协发",
     "topology": "LLC + DC-DC",
     "eighty_plus_certification": "Gold",
     "fan_size_mm": 90,
-    "fan_bearing_type": "DURO Bearing",
-    "fan_control_strategy": "Hybrid (RPM increases with load)",
-    "packaging_quality": "Good",
+    "fan_bearing_type": "Duro轴承",
+    "fan_control_strategy": "混合（RPM随负载增加）",
+    "packaging_quality": "良好",
     "nameplate_data": {
       "12v_current_a": 37.5,
-      "3_3v_5v_combined_power_w": 110
+      "5v_current_a": 20,
+      "3_3v_current_a": 20,
+      "side_power_w": 110
     },
     "peak_efficiency": {
       "peak_efficiency_percent": 90.5
     },
-    "voltage_regulation_ranking": 3,
-    "ripple_ranking": 4,
     "cross_load_pass": true,
     "emi_filter_y_caps_pairs": 4,
-    "rectifier_bridge_spec": "Normal",
-    "fan_wire_attachment": "Connector",
-    "main_capacitor_spec": "Rubycon 330uF/450V/105°C",
-    "other_components_quality": "Components mostly from big brands. Ferrite bead on 5VSB.",
+    "rectifier_bridge_spec": "正常",
+    "fan_wire_attachment": "连接器",
+    "main_capacitor_spec": "红宝石 330uF/450V/105°C",
+    "other_components_quality": "大部分来自大品牌。5VSB上有铁氧体珠。",
     "input_voltage_range": "100-240V",
     "hold_up_time_ms": {
       "pg_signal_ms": 35.9,
@@ -186,45 +235,62 @@
     },
     "protection_features": {
       "opp_trigger_w": 570,
-      "ocp_status": "Normal",
+      "ocp_status": "正常",
       "inrush_protection_components": "MOV+Fuse+NTC"
     },
-    "notes": "Tested version is V3.0. Good value for money. High fan RPM at full load compared to others."
+    "efficiency_points": [
+      {"load_percentage": 6.7, "efficiency_percentage": 76.0},
+      {"load_percentage": 11.1, "efficiency_percentage": 83.0},
+      {"load_percentage": 16.7, "efficiency_percentage": 87.0},
+      {"load_percentage": 22.2, "efficiency_percentage": 89.0},
+      {"load_percentage": 33.3, "efficiency_percentage": 90.0},
+      {"load_percentage": 44.4, "efficiency_percentage": 89.0},
+      {"load_percentage": 55.6, "efficiency_percentage": 88.0},
+      {"load_percentage": 66.7, "efficiency_percentage": 87.0},
+      {"load_percentage": 77.8, "efficiency_percentage": 86.0},
+      {"load_percentage": 88.9, "efficiency_percentage": 85.0},
+      {"load_percentage": 100.0, "efficiency_percentage": 84.0},
+      {"load_percentage": 111.1, "efficiency_percentage": 83.0},
+      {"load_percentage": 122.2, "efficiency_percentage": 82.0}
+    ],
+    "source": {
+      "name": "玩笑笑笑笑笑",
+      "url": "https://www.bilibili.com/video/BV1T34y1v7JH"
+    },
+    "notes": "测试版本是V3.0。性价比高。与他人相比，满载时风扇RPM较高。"
   },
   {
-    "model_name": "YINGXING 450W Full Modular",
-    "model_name_i18n": "yinxin_450w_full_modular_model",
-    "notes_i18n": "yinxin_450w_full_modular_notes",
-    "oem_i18n": "oem_yiheng",
+    "model_name": "银欣 ST45SF-G",
     "wattage": 450,
     "form_factor": "SFX",
-    "modularity": "Full",
+    "modularity": "全模组",
     "acquisition_status": "Used",
     "acquisition_price_rmb": "240",
     "warranty_years": 3,
-    "oem": "YiHeng",
+    "warranty_policy": "支援个人送保, 但是需要提供凭证, 且负担寄过去的邮费 (售后电话找不到)",
+    "oem": "益衡",
     "topology": "LLC + DC-DC",
     "eighty_plus_certification": "Gold",
     "fan_size_mm": 80,
-    "fan_bearing_type": "Dual Ball Bearing",
-    "fan_control_strategy": "Hybrid (RPM increases with load), high start-up RPM (~1200 RPM)",
-    "packaging_quality": "None (used)",
+    "fan_bearing_type": "双球轴承",
+    "fan_control_strategy": "混合（RPM随负载增加），高启动RPM（~1200 RPM）",
+    "packaging_quality": "无（使用）",
     "nameplate_data": {
-      "12v_current_a": 37.5,
-      "3_3v_5v_combined_power_w": 90
+      "12v_current_a": 37,
+      "5v_current_a": 14,
+      "3_3v_current_a": 19,
+      "side_power_w": 90
     },
     "peak_efficiency": {
       "peak_efficiency_percent": 88.5
     },
-    "voltage_regulation_ranking": 6,
-    "ripple_ranking": "Failed",
     "cross_load_pass": true,
     "emi_filter_y_caps_pairs": 4,
     "rectifier_bridge_spec": "Normal",
     "fan_wire_attachment": "Connector",
-    "main_capacitor_spec": "Rubycon 330uF/450V/105°C",
-    "other_components_quality": "All Japanese capacitors, all Infineon MOSFETs. Based on 7145B solution. Tight internal layout, restricted airflow. Input AC wires are long and messy. 12V output looks like dual rail but is single. Thin wire on back of PCB.",
-    "input_voltage_range": "200-240V",
+    "main_capacitor_spec": "红宝石 330uF/450V/105°C",
+    "other_components_quality": "全日本电容器，全英飞凌MOSFET。基于7145B解决方案。紧凑的内部布局，有限的气流。输入AC线长而乱。12V输出看起来像双轨，但实际上是单轨。PCB背面的细线。",
+    "input_voltage_range": "100-240V",
     "hold_up_time_ms": {
       "pg_signal_ms": 19.2,
       "12v_ms": 18.0,
@@ -237,41 +303,58 @@
       "ocp_status": "Normal",
       "inrush_protection_components": "MOV+Fuse+NTC"
     },
-    "notes": "Fan bearing wear issue common. Reviewer's acquisition price was lower than typical used market."
+    "efficiency_points": [
+      {"load_percentage": 6.7, "efficiency_percentage": 78.0},
+      {"load_percentage": 11.1, "efficiency_percentage": 86.0},
+      {"load_percentage": 16.7, "efficiency_percentage": 90.0},
+      {"load_percentage": 22.2, "efficiency_percentage": 91.0},
+      {"load_percentage": 33.3, "efficiency_percentage": 92.0},
+      {"load_percentage": 44.4, "efficiency_percentage": 91.5},
+      {"load_percentage": 55.6, "efficiency_percentage": 91.0},
+      {"load_percentage": 66.7, "efficiency_percentage": 90.0},
+      {"load_percentage": 77.8, "efficiency_percentage": 89.0},
+      {"load_percentage": 88.9, "efficiency_percentage": 88.0},
+      {"load_percentage": 100.0, "efficiency_percentage": 87.0},
+      {"load_percentage": 111.1, "efficiency_percentage": 86.0},
+      {"load_percentage": 122.2, "efficiency_percentage": 85.0}
+    ],
+    "source": {
+      "name": "玩笑笑笑笑笑",
+      "url": "https://www.bilibili.com/video/BV1T34y1v7JH"
+    },
+    "notes": "7415B同换壳"
   },
   {
-    "model_name": "Tt Smart BX1 450W",
-    "model_name_i18n": "tt_smart_bx1_450w_model",
-    "notes_i18n": "tt_smart_bx1_450w_notes",
-    "oem_i18n": "oem_jiuzhou_yangguang_hkc",
+    "model_name": "TT TRM 450W",
     "wattage": 450,
     "form_factor": "SFX",
-    "modularity": "Non-Modular",
+    "modularity": "非模组",
     "acquisition_status": "New",
     "acquisition_price_rmb": "259",
     "warranty_years": 3,
-    "oem": "Jiuzhou Yangguang (HKC)",
-    "topology": "Single Magnetic Amplification",
+    "warranty_policy": "不支援, 只能经销商送保",
+    "oem": "九洲阳光（HKC）",
+    "topology": "单磁放大",
     "eighty_plus_certification": "Bronze",
     "fan_size_mm": 80,
-    "fan_bearing_type": "Unknown",
-    "fan_control_strategy": "Two-stage (low load one RPM, high load another)",
-    "packaging_quality": "Good",
+    "fan_bearing_type": "未知",
+    "fan_control_strategy": "两阶段（低负载一个RPM，高负载另一个）",
+    "packaging_quality": "良好",
     "nameplate_data": {
-      "12v_current_a": 37.0,
-      "3_3v_5v_combined_power_w": 100
+      "12v_current_a": 37,
+      "5v_current_a": 14,
+      "3_3v_current_a": 14,
+      "side_power_w": 100
     },
     "peak_efficiency": {
       "peak_efficiency_percent": 87.46
     },
-    "voltage_regulation_ranking": null,
-    "ripple_ranking": "Failed",
     "cross_load_pass": true,
     "emi_filter_y_caps_pairs": 4,
     "rectifier_bridge_spec": "Normal",
-    "fan_wire_attachment": "Connector",
-    "main_capacitor_spec": "Rubycon 120uF/420V/105°C",
-    "other_components_quality": "Lowest overall component spec.",
+    "fan_wire_attachment": "连接器",
+    "main_capacitor_spec": "红宝石 120uF/420V/105°C",
+    "other_components_quality": "最低的总体组件规格。",
     "input_voltage_range": "200-240V",
     "hold_up_time_ms": {
       "pg_signal_ms": 13.3,
@@ -285,41 +368,58 @@
       "ocp_status": "Not tested (due to UVP)",
       "inrush_protection_components": "MOV+Fuse+NTC"
     },
-    "notes": "Still uses single magnetic amplification. Small 8cm fan, max 2500 RPM. High temperature at full load. Not directly comparable in voltage regulation/ripple rankings due to topology."
+    "efficiency_points": [
+      {"load_percentage": 6.7, "efficiency_percentage": 77.0},
+      {"load_percentage": 11.1, "efficiency_percentage": 84.0},
+      {"load_percentage": 16.7, "efficiency_percentage": 87.0},
+      {"load_percentage": 22.2, "efficiency_percentage": 88.0},
+      {"load_percentage": 33.3, "efficiency_percentage": 88.5},
+      {"load_percentage": 44.4, "efficiency_percentage": 88.0},
+      {"load_percentage": 55.6, "efficiency_percentage": 86.0},
+      {"load_percentage": 66.7, "efficiency_percentage": 84.0},
+      {"load_percentage": 77.8, "efficiency_percentage": 82.0},
+      {"load_percentage": 88.9, "efficiency_percentage": 80.0},
+      {"load_percentage": 100.0, "efficiency_percentage": 78.0},
+      {"load_percentage": 111.1, "efficiency_percentage": 75.0},
+      {"load_percentage": 122.2, "efficiency_percentage": 72.0}
+    ],
+    "source": {
+      "name": "玩笑笑笑笑笑",
+      "url": "https://www.bilibili.com/video/BV1T34y1v7JH"
+    },
+    "notes": "仍使用单磁放大。小8cm风扇，最大2500RPM。满载温度高。由于拓扑结构不同，电压调节/纹波排名不具直接可比性。"
   },
   {
-    "model_name": "FSP MS450",
-    "model_name_i18n": "fsp_ms450_model",
-    "notes_i18n": "fsp_ms450_notes",
-    "oem_i18n": "oem_fsp_wuxi_zhonghan",
+    "model_name": "全汉 MS450",
     "wattage": 450,
     "form_factor": "SFX",
-    "modularity": "Non-Modular",
+    "modularity": "非模组",
     "acquisition_status": "New",
     "acquisition_price_rmb": "409",
     "warranty_years": 5,
-    "oem": "FSP (Wuxi Zhonghan)",
+    "warranty_policy": "不支援, 只能经销商送保",
+    "oem": "无锡仲汉（全汉分公司）",
     "topology": "LLC + DC-DC",
     "eighty_plus_certification": "Bronze",
     "fan_size_mm": 80,
-    "fan_bearing_type": "Fluid Dynamic Bearing",
-    "fan_control_strategy": "Fan Stop (no self-check spin on startup)",
-    "packaging_quality": "Excellent",
+    "fan_bearing_type": "流体动力轴承",
+    "fan_control_strategy": "风扇停止（启动时无自检旋转）",
+    "packaging_quality": "优秀",
     "nameplate_data": {
       "12v_current_a": 38.0,
-      "3_3v_5v_combined_power_w": 80
+      "5v_current_a": 15,
+      "3_3v_current_a": 15,
+      "side_power_w": 80
     },
     "peak_efficiency": {
       "peak_efficiency_percent": 88.51
     },
-    "voltage_regulation_ranking": 7,
-    "ripple_ranking": "Failed",
     "cross_load_pass": true,
     "emi_filter_y_caps_pairs": 1,
-    "rectifier_bridge_spec": "Lowest spec",
-    "fan_wire_attachment": "Soldered",
-    "main_capacitor_spec": "Rubycon 120uF/400V/105°C",
-    "other_components_quality": "Fixed screws covered by stickers.",
+    "rectifier_bridge_spec": "最低规格",
+    "fan_wire_attachment": "焊接",
+    "main_capacitor_spec": "红宝石 120uF/400V/105°C",
+    "other_components_quality": "固定螺丝被贴纸覆盖。",
     "input_voltage_range": "200-240V",
     "hold_up_time_ms": {
       "pg_signal_ms": 14.2,
@@ -330,9 +430,28 @@
     },
     "protection_features": {
       "opp_trigger_w": 560,
-      "ocp_status": "Questionable (3.3V smoke, 5V damage)",
+      "ocp_status": "可疑（3.3V冒烟，5V损坏）",
       "inrush_protection_components": "MOV+Fuse+NTC"
     },
-    "notes": "Highest exhaust temperature (87.3°C). Tested version is 2.0."
+    "efficiency_points": [
+      {"load_percentage": 6.7, "efficiency_percentage": 76.0},
+      {"load_percentage": 11.1, "efficiency_percentage": 83.0},
+      {"load_percentage": 16.7, "efficiency_percentage": 87.0},
+      {"load_percentage": 22.2, "efficiency_percentage": 88.0},
+      {"load_percentage": 33.3, "efficiency_percentage": 88.5},
+      {"load_percentage": 44.4, "efficiency_percentage": 88.5},
+      {"load_percentage": 55.6, "efficiency_percentage": 87.0},
+      {"load_percentage": 66.7, "efficiency_percentage": 85.0},
+      {"load_percentage": 77.8, "efficiency_percentage": 83.0},
+      {"load_percentage": 88.9, "efficiency_percentage": 81.0},
+      {"load_percentage": 100.0, "efficiency_percentage": 79.0},
+      {"load_percentage": 111.1, "efficiency_percentage": 77.0},
+      {"load_percentage": 122.2, "efficiency_percentage": 75.0}
+    ],
+    "source": {
+      "name": "玩笑笑笑笑笑",
+      "url": "https://www.bilibili.com/video/BV1T34y1v7JH"
+    },
+    "notes": "最高排气温度（87.3°C）。测试版本是2.0。"
   }
 ]

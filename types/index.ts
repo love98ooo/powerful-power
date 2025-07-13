@@ -7,6 +7,7 @@ export interface PowerSupply {
   acquisition_status: string;
   acquisition_price_rmb: number | null;
   warranty_years: number;
+  warranty_policy: string;
   oem: string;
   topology: string;
   "eighty_plus_certification": string;
@@ -16,13 +17,13 @@ export interface PowerSupply {
   packaging_quality: string;
   nameplate_data: {
     "12v_current_a": number | null;
-    "3_3v_5v_combined_power_w": number | null;
+    "5v_current_a": number | null;
+    "3_3v_current_a": number | null;
+    "side_power_w": number | null;
   };
   peak_efficiency: {
     peak_efficiency_percent: number | null;
   };
-  voltage_regulation_ranking: number | null;
-  ripple_ranking: number | string;
   cross_load_pass: boolean;
   emi_filter_y_caps_pairs: number | null;
   rectifier_bridge_spec: string | null;
@@ -42,6 +43,8 @@ export interface PowerSupply {
     ocp_status: string;
     inrush_protection_components: string;
   };
+  efficiency_points: EfficiencyPoint[];
+  source?: Source;
   notes: string;
 }
 
@@ -73,4 +76,9 @@ export interface FilterOptions {
   minPower?: number;
   maxPower?: number;
   sortBy?: string;
-} 
+}
+
+export interface Source {
+  name: string;
+  url: string;
+}
