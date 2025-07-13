@@ -11,9 +11,10 @@ export async function generateStaticParams() {
 }
 
 // 生成元数据
-export async function generateMetadata({ params }: { params: { name: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ name: string }> }) {
+  const { name } = await params
   const powerSupply = powerSuppliesData.find(
-    (ps) => generatePowerSupplyId(ps.model_name) === params.name
+    (ps) => generatePowerSupplyId(ps.model_name) === name
   )
 
   if (!powerSupply) {
@@ -29,14 +30,15 @@ export async function generateMetadata({ params }: { params: { name: string } })
 }
 
 interface PageProps {
-  params: {
+  params: Promise<{
     name: string
-  }
+  }>
 }
 
-export default function PowerSupplyPage({ params }: PageProps) {
+export default async function PowerSupplyPage({ params }: PageProps) {
+  const { name } = await params
   const powerSupply = powerSuppliesData.find(
-    (ps) => generatePowerSupplyId(ps.model_name) === params.name
+    (ps) => generatePowerSupplyId(ps.model_name) === name
   )
 
   if (!powerSupply) {
