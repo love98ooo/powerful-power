@@ -117,7 +117,7 @@ const EfficiencyChart: React.FC<EfficiencyChartProps> = ({ data }) => {
           color: colors.grid,
         },
       },
-      min: 0,
+      min: 65,
       max: 100,
     },
     series: [

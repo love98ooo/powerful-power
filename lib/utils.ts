@@ -19,5 +19,5 @@ export function debounce<T extends (...args: any[]) => void>(
 
 // 生成电源ID的统一函数
 export function generatePowerSupplyId(modelName: string): string {
-  return modelName.replace(/\s+/g, '-').toLowerCase()
+  return encodeURIComponent(modelName.replace(/\s+/g, '-').toLowerCase())
 }

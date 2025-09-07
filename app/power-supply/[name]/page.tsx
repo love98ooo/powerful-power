@@ -13,8 +13,9 @@ export async function generateStaticParams() {
 // 生成元数据
 export async function generateMetadata({ params }: { params: Promise<{ name: string }> }) {
   const { name } = await params
+  const decodedName = decodeURIComponent(name)
   const powerSupply = powerSuppliesData.find(
-    (ps) => generatePowerSupplyId(ps.model_name) === name
+    (ps) => generatePowerSupplyId(ps.model_name) === name || generatePowerSupplyId(ps.model_name) === decodedName
   )
 
   if (!powerSupply) {
@@ -37,8 +38,9 @@ interface PageProps {
 
 export default async function PowerSupplyPage({ params }: PageProps) {
   const { name } = await params
+  const decodedName = decodeURIComponent(name)
   const powerSupply = powerSuppliesData.find(
-    (ps) => generatePowerSupplyId(ps.model_name) === name
+    (ps) => generatePowerSupplyId(ps.model_name) === name || generatePowerSupplyId(ps.model_name) === decodedName
   )
 
   if (!powerSupply) {
